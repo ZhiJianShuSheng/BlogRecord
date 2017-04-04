@@ -1,0 +1,84 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 纸简书生
+subtitle: 因为有了危机感，所以会义无反顾。
+description: 人与人之间的差别在于，一、想得到和想不到，二、想得到且做到的想到但做不到；离开舒适区、自律是方法论。写作，阅读、锻炼、早起、旅行是方法。牢记方法论、价值观，躬行方法，让自己更好！
+author: 纸简书生
+language: zh-CN
+timezone:
+
+# URL 这项暂不配置，绑定域名后，欲创建sitemap.xml需要配置该项
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+# url: http://yoursite.com
+# root: /
+# permalink: :year/:month/:day/:title/
+# permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+about: about
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing 文章布局、写作格式的定义，不修改
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format 日期格式，不修改
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination  每页显示文章数，可以自定义，我将10改成了5
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: hexo-theme-material-1.2.6
+#theme: next
+
+# 自动生成sitemap
+sitemap:
+path: sitemap.xml
+
+# 搜索
+search:
+  path: search.xml
+  field: post
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: git@github.com:ZhiJianShuSheng/ZhiJianShuSheng.github.io.git
+  branch: master
